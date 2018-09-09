@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A996F6F82144F87A008C0E20 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F6F72144F87A008C0E20 /* APIKey.swift */; };
+		A996F6FA2144F8BF008C0E20 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F6F92144F8BF008C0E20 /* Preferences.swift */; };
+		A996F6FC2144F8CD008C0E20 /* PreferencesKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F6FB2144F8CD008C0E20 /* PreferencesKey.swift */; };
+		A996F7012144F959008C0E20 /* GIFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7002144F959008C0E20 /* GIFCollectionViewCell.swift */; };
+		A996F7032144FA7C008C0E20 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7022144FA7C008C0E20 /* DashboardViewController.swift */; };
+		A996F7052144FAC0008C0E20 /* DashboardViewController+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7042144FAC0008C0E20 /* DashboardViewController+Search.swift */; };
+		A996F7082144FB41008C0E20 /* UICollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7072144FB41008C0E20 /* UICollectionViewLayout.swift */; };
+		A996F70A214511C9008C0E20 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F709214511C9008C0E20 /* DashboardViewModel.swift */; };
+		A996F70C214511FE008C0E20 /* DashboardViewModel+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F70B214511FE008C0E20 /* DashboardViewModel+CollectionView.swift */; };
 		A9D93535214417B9006CC456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D93534214417B9006CC456 /* AppDelegate.swift */; };
-		A9D93537214417B9006CC456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D93536214417B9006CC456 /* ViewController.swift */; };
 		A9D9353A214417B9006CC456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D93538214417B9006CC456 /* Main.storyboard */; };
 		A9D9353C214417BB006CC456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D9353B214417BB006CC456 /* Assets.xcassets */; };
 		A9D9353F214417BB006CC456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D9353D214417BB006CC456 /* LaunchScreen.storyboard */; };
@@ -16,9 +24,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A996F6F72144F87A008C0E20 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		A996F6F92144F8BF008C0E20 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		A996F6FB2144F8CD008C0E20 /* PreferencesKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesKey.swift; sourceTree = "<group>"; };
+		A996F7002144F959008C0E20 /* GIFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFCollectionViewCell.swift; sourceTree = "<group>"; };
+		A996F7022144FA7C008C0E20 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		A996F7042144FAC0008C0E20 /* DashboardViewController+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+Search.swift"; sourceTree = "<group>"; };
+		A996F7072144FB41008C0E20 /* UICollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewLayout.swift; sourceTree = "<group>"; };
+		A996F709214511C9008C0E20 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		A996F70B214511FE008C0E20 /* DashboardViewModel+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewModel+CollectionView.swift"; sourceTree = "<group>"; };
 		A9D93531214417B9006CC456 /* GIFSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D93534214417B9006CC456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9D93536214417B9006CC456 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9D93539214417B9006CC456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9D9353B214417BB006CC456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D9353E214417BB006CC456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +53,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A996F6FD2144F912008C0E20 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				A996F7002144F959008C0E20 /* GIFCollectionViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		A996F6FE2144F91C008C0E20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A996F6FF2144F92D008C0E20 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A996F6FF2144F92D008C0E20 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A996F7022144FA7C008C0E20 /* DashboardViewController.swift */,
+				A996F7042144FAC0008C0E20 /* DashboardViewController+Search.swift */,
+				A9D93538214417B9006CC456 /* Main.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A996F7062144FAFA008C0E20 /* UICollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A996F7072144FB41008C0E20 /* UICollectionViewLayout.swift */,
+			);
+			name = UICollectionViewLayout;
+			sourceTree = "<group>";
+		};
 		A9D93528214417B9006CC456 = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +113,6 @@
 				A9D935532144292C006CC456 /* ViewModel */,
 				A9D9355221442924006CC456 /* View */,
 				A9D935512144291D006CC456 /* Model */,
-				A9D93536214417B9006CC456 /* ViewController.swift */,
-				A9D93538214417B9006CC456 /* Main.storyboard */,
 				A9D9353B214417BB006CC456 /* Assets.xcassets */,
 			);
 			path = GIFSearcher;
@@ -89,6 +137,9 @@
 		A9D935512144291D006CC456 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A996F6F72144F87A008C0E20 /* APIKey.swift */,
+				A996F6F92144F8BF008C0E20 /* Preferences.swift */,
+				A996F6FB2144F8CD008C0E20 /* PreferencesKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +147,9 @@
 		A9D9355221442924006CC456 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A996F7062144FAFA008C0E20 /* UICollectionViewLayout */,
+				A996F6FE2144F91C008C0E20 /* Controllers */,
+				A996F6FD2144F912008C0E20 /* CustomCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +157,8 @@
 		A9D935532144292C006CC456 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A996F709214511C9008C0E20 /* DashboardViewModel.swift */,
+				A996F70B214511FE008C0E20 /* DashboardViewModel+CollectionView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -182,8 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D93537214417B9006CC456 /* ViewController.swift in Sources */,
+				A996F70C214511FE008C0E20 /* DashboardViewModel+CollectionView.swift in Sources */,
+				A996F7052144FAC0008C0E20 /* DashboardViewController+Search.swift in Sources */,
+				A996F7012144F959008C0E20 /* GIFCollectionViewCell.swift in Sources */,
+				A996F7082144FB41008C0E20 /* UICollectionViewLayout.swift in Sources */,
+				A996F70A214511C9008C0E20 /* DashboardViewModel.swift in Sources */,
+				A996F7032144FA7C008C0E20 /* DashboardViewController.swift in Sources */,
+				A996F6F82144F87A008C0E20 /* APIKey.swift in Sources */,
+				A996F6FA2144F8BF008C0E20 /* Preferences.swift in Sources */,
 				A9D93535214417B9006CC456 /* AppDelegate.swift in Sources */,
+				A996F6FC2144F8CD008C0E20 /* PreferencesKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
