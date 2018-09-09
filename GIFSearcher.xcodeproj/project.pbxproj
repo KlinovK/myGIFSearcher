@@ -12,6 +12,7 @@
 		A9D9353A214417B9006CC456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D93538214417B9006CC456 /* Main.storyboard */; };
 		A9D9353C214417BB006CC456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D9353B214417BB006CC456 /* Assets.xcassets */; };
 		A9D9353F214417BB006CC456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D9353D214417BB006CC456 /* LaunchScreen.storyboard */; };
+		A9D9354D2144285A006CC456 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A9D9354C2144285A006CC456 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A9D9353B214417BB006CC456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D9353E214417BB006CC456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9D93540214417BB006CC456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D9354C2144285A006CC456 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		A9D93528214417B9006CC456 = {
 			isa = PBXGroup;
 			children = (
+				A9D9354C2144285A006CC456 /* README.md */,
 				A9D93533214417B9006CC456 /* GIFSearcher */,
 				A9D93532214417B9006CC456 /* Products */,
 			);
@@ -55,13 +58,53 @@
 			isa = PBXGroup;
 			children = (
 				A9D93534214417B9006CC456 /* AppDelegate.swift */,
+				A9D9354F214428C6006CC456 /* Extensions */,
+				A9D93550214428DC006CC456 /* App Boilerplate */,
+				A9D935532144292C006CC456 /* ViewModel */,
+				A9D9355221442924006CC456 /* View */,
+				A9D935512144291D006CC456 /* Model */,
 				A9D93536214417B9006CC456 /* ViewController.swift */,
 				A9D93538214417B9006CC456 /* Main.storyboard */,
 				A9D9353B214417BB006CC456 /* Assets.xcassets */,
-				A9D9353D214417BB006CC456 /* LaunchScreen.storyboard */,
-				A9D93540214417BB006CC456 /* Info.plist */,
 			);
 			path = GIFSearcher;
+			sourceTree = "<group>";
+		};
+		A9D9354F214428C6006CC456 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9D93550214428DC006CC456 /* App Boilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				A9D93540214417BB006CC456 /* Info.plist */,
+				A9D9353D214417BB006CC456 /* LaunchScreen.storyboard */,
+			);
+			path = "App Boilerplate";
+			sourceTree = "<group>";
+		};
+		A9D935512144291D006CC456 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9D9355221442924006CC456 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9D935532144292C006CC456 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +133,9 @@
 		A9D93529214417B9006CC456 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					md,
+				);
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Константин Клинов";
@@ -124,6 +170,7 @@
 			files = (
 				A9D9353F214417BB006CC456 /* LaunchScreen.storyboard in Resources */,
 				A9D9353C214417BB006CC456 /* Assets.xcassets in Resources */,
+				A9D9354D2144285A006CC456 /* README.md in Resources */,
 				A9D9353A214417B9006CC456 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
