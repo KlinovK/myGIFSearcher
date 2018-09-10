@@ -8,5 +8,7 @@
 
 import Foundation
 
+//My API key
+
 let APIKey = "b50MkqBltYgoBLwul6BgN2tbDWbawE5B"
 

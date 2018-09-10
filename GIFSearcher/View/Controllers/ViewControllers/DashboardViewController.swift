@@ -11,16 +11,10 @@ import UIKit
 class DashboardViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var BackgroundCollectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     /// The data model. Internal so the extension can access it.
     internal let viewModel = DashboardViewModel()
-    
-    /// The speech controller pronounces GIF and other gimmickery.
-  //  private let speechController = SpeechController()
-    
-    /// The settings controller coordinates display of the settings screens.
-//    private lazy var settingsController: SettingsController = SettingsController(with: self)
     
     // MARK: - View Lifecycle
     
@@ -31,28 +25,17 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource, UIC
         self.configureCollectionView()
         self.configureSearchBar()
         self.viewModel.setNeedsRefresh()
-        self.configureButtons()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     // MARK: - Configuring the Collection View
     
     func configureCollectionView()
     {
-   //     self.configure(collectionView: self.collectionView)
-        self.configure(collectionView: self.BackgroundCollectionView)
-        
-      //  let refreshControl = UIRefreshControl()
-    //    refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
-      //  self.collectionView.refreshControl = refreshControl
+        self.configure(collectionView: self.collectionView)
     }
     
     func configure(collectionView: UICollectionView)
@@ -85,17 +68,6 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource, UIC
         self.searchBar.placeholder = NSLocalizedString("Type to Search Giphy", comment: "A string with search instructions.")
     }
     
-    // MARK: - Configuring UIBarButtonItems
-    
-    func configureButtons()
-    {
-      //  let speakButton = UIBarButtonItem(title: "💬 (🎧)", style: .plain, target: self, action: #selector(speak))
-       // self.navigationItem.rightBarButtonItem = speakButton
-        
-     //   let settingsButton = UIBarButtonItem(title: "⚙️", style: .plain, target: self, action: #selector(showSettings))
-       // self.navigationItem.leftBarButtonItems = [settingsButton]
-    }
-    
     // MARK: - Configuring Our Response to ViewModel Updates
     
     /// Sets a refresh handler that is executed whenever the
@@ -112,14 +84,14 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource, UIC
                 
                 strongSelf.title = strongSelf.viewModel.title
                 
-                strongSelf.BackgroundCollectionView.performBatchUpdates({
+                strongSelf.collectionView.performBatchUpdates({
                     let itemIndexSet = IndexSet(integer: 0)
-                    strongSelf.BackgroundCollectionView.reloadSections(itemIndexSet)
+                    strongSelf.collectionView.reloadSections(itemIndexSet)
                 }) { (complete: Bool) in
-                    strongSelf.BackgroundCollectionView.reloadData()
+                    strongSelf.collectionView.reloadData()
                 }
                 
-                strongSelf.BackgroundCollectionView.refreshControl?.endRefreshing()
+                strongSelf.collectionView.refreshControl?.endRefreshing()
             }
         }
         
@@ -129,7 +101,7 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource, UIC
     
     func refresh()
     {
-        self.BackgroundCollectionView.refreshControl?.beginRefreshing()
+        self.collectionView.refreshControl?.beginRefreshing()
         self.viewModel.setNeedsRefresh()
     }
     
@@ -145,27 +117,15 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource, UIC
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gifCell", for: indexPath) as! GIFCollectionViewCell
-        
-        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
-        let cell = cell as! GIFCollectionViewCell
-        
-        if BackgroundCollectionView == self.BackgroundCollectionView
+        if collectionView == self.collectionView
         {
-            if let hashtags = self.viewModel.hashtags(for: indexPath)
-            {
-                cell.gifLbl.text = hashtags
-                cell.gifLbl.alpha = 1.0
-            }
-            else
-            {
-              //  cell.hashtagsPanel.alpha = 0.0
-            }
-        }
+            self.collectionView.contentOffset = self.collectionView.contentOffset
+                }
         
         let _ = self.viewModel.gif(for: indexPath) { (data: Data?, originalIndexPath: IndexPath) in
             DispatchQueue.main.async {
@@ -176,42 +136,21 @@ class DashboardViewController: UIViewController, UICollectionViewDataSource, UIC
                         let image =  UIImage.gif(from: data)
                         if let cell = collectionView.cellForItem(at: originalIndexPath) as? GIFCollectionViewCell
                         {
-                            
                             cell.imageView.image = image
                         }
                     }
                 }
             }
-            
         }
     }
     
     // MARK: - UIScrollViewDelegate
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView == self.BackgroundCollectionView
+        if scrollView == self.collectionView
         {
-            self.BackgroundCollectionView.contentOffset = self.BackgroundCollectionView.contentOffset
+            self.collectionView.contentOffset = self.collectionView.contentOffset
         }
     }
-    
-    // MARK: - Speak
-    
-    /// This is a requirement 🙄
-    func speak()
-    {
-      //  self.speechController.pronounce(text: "This app uses UICollectionView, NSURLSession, and Swift, to display trending images from Giphy.com. You can search using the search bar. Per the requirement, I am supposed to tell you how to pronounce GIF. There.")
-    }
-    
-    // MARK: - Showing Settings
-    
-    /// Show the settings menu.
-    /// For now, just skip to ratings.
-    func showSettings()
-    {
-     //   self.settingsController.present()
-    }
-    
-    
 }
 

@@ -43,26 +43,16 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mjG-bB-GA5">
                                                     <rect key="frame" x="8" y="8" width="128" height="128"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9w2-N0-mwQ">
-                                                    <rect key="frame" x="8" y="112.5" width="128" height="23.5"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="mjG-bB-GA5" firstAttribute="leading" secondItem="lfJ-UN-lqs" secondAttribute="leadingMargin" id="6bD-2C-bFl"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="9w2-N0-mwQ" secondAttribute="bottom" id="EI0-bm-18M"/>
-                                            <constraint firstItem="9w2-N0-mwQ" firstAttribute="leading" secondItem="lfJ-UN-lqs" secondAttribute="leadingMargin" id="OCP-kR-xh6"/>
                                             <constraint firstItem="mjG-bB-GA5" firstAttribute="top" secondItem="lfJ-UN-lqs" secondAttribute="topMargin" id="SBM-wd-B61"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="mjG-bB-GA5" secondAttribute="trailing" id="ePr-l9-pRQ"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="9w2-N0-mwQ" secondAttribute="trailing" id="fUE-0s-GWV"/>
                                             <constraint firstItem="mjG-bB-GA5" firstAttribute="bottom" secondItem="lfJ-UN-lqs" secondAttribute="bottomMargin" id="tfK-kV-H5j"/>
                                         </constraints>
                                         <size key="customSize" width="144" height="144"/>
                                         <connections>
-                                            <outlet property="gifLbl" destination="9w2-N0-mwQ" id="ZTX-6Z-nNY"/>
                                             <outlet property="imageView" destination="mjG-bB-GA5" id="MMh-KZ-tGb"/>
                                         </connections>
                                     </collectionViewCell>
@@ -82,7 +72,7 @@
                         <viewLayoutGuide key="safeArea" id="27N-Uq-4BH"/>
                     </view>
                     <connections>
-                        <outlet property="BackgroundCollectionView" destination="ZRN-xR-Hcf" id="Wzx-te-oeJ"/>
+                        <outlet property="collectionView" destination="ZRN-xR-Hcf" id="Wzx-te-oeJ"/>
                         <outlet property="searchBar" destination="R38-e0-Uwf" id="Pnv-cJ-jb0"/>
                     </connections>
                 </viewController>

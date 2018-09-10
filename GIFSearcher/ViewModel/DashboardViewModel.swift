@@ -45,7 +45,6 @@ class DashboardViewModel: NSObject {
         {
             title = NSLocalizedString("Giphy Results for \(term)", comment: "")
         }
-        
         return title
     }
     
@@ -62,9 +61,6 @@ class DashboardViewModel: NSObject {
         self.apiClient = GiphyAPIClient(with: self.apiKey)
         super.init()
         
-        self.loadPreferences()
-        let name = Notification.Name.PreferencesChanged
-        NotificationCenter.default.addObserver(self, selector: #selector(handlePreferencesChanged(notification:)), name: name, object: nil)
     }
     
     

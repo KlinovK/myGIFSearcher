@@ -197,7 +197,7 @@ public extension UIImage
         for index in 0..<durations.count
         {
             let duration = durations[index]
-            vector = gcd(a: Int(duration), b: Int(vector))
+          vector = gcd(a: Int(duration), b: Int(vector))
         }
         
         return vector

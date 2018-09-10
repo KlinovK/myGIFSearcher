@@ -10,7 +10,6 @@ import UIKit
 
 class GIFCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var gifLbl: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
 }

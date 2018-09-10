@@ -41,9 +41,6 @@ public class GIF: NSObject {
     
     // MARK: - Sorting/Filtering the GIF
     
-    // The rating of the asset.
-    public var rating: Rating
-    
     /// A list of tags assigned to the GIF
     public var tags: [String]?
     
@@ -115,10 +112,6 @@ public class GIF: NSObject {
             return nil
         }
         
-        guard let rating = json["rating"] as? String else
-        {
-            return nil
-        }
         
         guard let bitly = json["bitly_url"] as? String else
         {
@@ -162,7 +155,6 @@ public class GIF: NSObject {
         self.sourcePost = URL(string: sourcePage)
         
         // Search / Filter
-        self.rating = Rating(rawValue:rating) ?? .unrated
         self.tags = json["tags"] as? [String]
         self.featuredTags = json["featured_tags"] as? [String]
         
