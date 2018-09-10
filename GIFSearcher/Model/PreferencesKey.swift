@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum PreferencesKey: String {
+    case rating = "com.mosheberman.giphy.key.rating"
+    case language = "com.mosheberman.giphy.key.language"
+}

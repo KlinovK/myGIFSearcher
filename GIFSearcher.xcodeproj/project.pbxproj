@@ -13,9 +13,25 @@
 		A996F7012144F959008C0E20 /* GIFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7002144F959008C0E20 /* GIFCollectionViewCell.swift */; };
 		A996F7032144FA7C008C0E20 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7022144FA7C008C0E20 /* DashboardViewController.swift */; };
 		A996F7052144FAC0008C0E20 /* DashboardViewController+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7042144FAC0008C0E20 /* DashboardViewController+Search.swift */; };
-		A996F7082144FB41008C0E20 /* UICollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7072144FB41008C0E20 /* UICollectionViewLayout.swift */; };
+		A996F7082144FB41008C0E20 /* GiphyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7072144FB41008C0E20 /* GiphyLayout.swift */; };
 		A996F70A214511C9008C0E20 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F709214511C9008C0E20 /* DashboardViewModel.swift */; };
 		A996F70C214511FE008C0E20 /* DashboardViewModel+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F70B214511FE008C0E20 /* DashboardViewModel+CollectionView.swift */; };
+		A996F70E21454E6B008C0E20 /* GiphyKit in Resources */ = {isa = PBXBuildFile; fileRef = A996F70D21454E6B008C0E20 /* GiphyKit */; };
+		A996F7102145500B008C0E20 /* GiphyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F70F2145500B008C0E20 /* GiphyAPIClient.swift */; };
+		A996F71221456CF5008C0E20 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F71121456CF5008C0E20 /* Rating.swift */; };
+		A996F71421456D3D008C0E20 /* LanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F71321456D3D008C0E20 /* LanguageCode.swift */; };
+		A996F71621456D8B008C0E20 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F71521456D8B008C0E20 /* GIF.swift */; };
+		A996F7182145ADA4008C0E20 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7172145ADA4008C0E20 /* ErrorCode.swift */; };
+		A996F71A2145AE36008C0E20 /* RenditionDesignation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7192145AE36008C0E20 /* RenditionDesignation.swift */; };
+		A996F71C2145AE5C008C0E20 /* Rendition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F71B2145AE5C008C0E20 /* Rendition.swift */; };
+		A996F71E2145AE8E008C0E20 /* RenditionFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F71D2145AE8E008C0E20 /* RenditionFileType.swift */; };
+		A996F7202145AEBD008C0E20 /* RenditionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F71F2145AEBD008C0E20 /* RenditionFile.swift */; };
+		A996F7222145AEFC008C0E20 /* RenditionFileType+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7212145AEFC008C0E20 /* RenditionFileType+Keys.swift */; };
+		A996F7242145AF2B008C0E20 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7232145AF2B008C0E20 /* Formatters.swift */; };
+		A996F7262145B056008C0E20 /* DashboardViewModel+Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7252145B056008C0E20 /* DashboardViewModel+Preferences.swift */; };
+		A996F7282145B0D3008C0E20 /* NotificationName+Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F7272145B0D3008C0E20 /* NotificationName+Preferences.swift */; };
+		A996F72A21466B7A008C0E20 /* UIImage+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F72921466B7A008C0E20 /* UIImage+GIF.swift */; };
+		A996F72C21466BD0008C0E20 /* gcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996F72B21466BD0008C0E20 /* gcd.swift */; };
 		A9D93535214417B9006CC456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D93534214417B9006CC456 /* AppDelegate.swift */; };
 		A9D9353A214417B9006CC456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D93538214417B9006CC456 /* Main.storyboard */; };
 		A9D9353C214417BB006CC456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D9353B214417BB006CC456 /* Assets.xcassets */; };
@@ -30,9 +46,25 @@
 		A996F7002144F959008C0E20 /* GIFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFCollectionViewCell.swift; sourceTree = "<group>"; };
 		A996F7022144FA7C008C0E20 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		A996F7042144FAC0008C0E20 /* DashboardViewController+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+Search.swift"; sourceTree = "<group>"; };
-		A996F7072144FB41008C0E20 /* UICollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewLayout.swift; sourceTree = "<group>"; };
+		A996F7072144FB41008C0E20 /* GiphyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyLayout.swift; sourceTree = "<group>"; };
 		A996F709214511C9008C0E20 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		A996F70B214511FE008C0E20 /* DashboardViewModel+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewModel+CollectionView.swift"; sourceTree = "<group>"; };
+		A996F70D21454E6B008C0E20 /* GiphyKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GiphyKit; sourceTree = "<group>"; };
+		A996F70F2145500B008C0E20 /* GiphyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyAPIClient.swift; sourceTree = "<group>"; };
+		A996F71121456CF5008C0E20 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		A996F71321456D3D008C0E20 /* LanguageCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCode.swift; sourceTree = "<group>"; };
+		A996F71521456D8B008C0E20 /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
+		A996F7172145ADA4008C0E20 /* ErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		A996F7192145AE36008C0E20 /* RenditionDesignation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenditionDesignation.swift; sourceTree = "<group>"; };
+		A996F71B2145AE5C008C0E20 /* Rendition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendition.swift; sourceTree = "<group>"; };
+		A996F71D2145AE8E008C0E20 /* RenditionFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenditionFileType.swift; sourceTree = "<group>"; };
+		A996F71F2145AEBD008C0E20 /* RenditionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenditionFile.swift; sourceTree = "<group>"; };
+		A996F7212145AEFC008C0E20 /* RenditionFileType+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RenditionFileType+Keys.swift"; sourceTree = "<group>"; };
+		A996F7232145AF2B008C0E20 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		A996F7252145B056008C0E20 /* DashboardViewModel+Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewModel+Preferences.swift"; sourceTree = "<group>"; };
+		A996F7272145B0D3008C0E20 /* NotificationName+Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Preferences.swift"; sourceTree = "<group>"; };
+		A996F72921466B7A008C0E20 /* UIImage+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+GIF.swift"; sourceTree = "<group>"; };
+		A996F72B21466BD0008C0E20 /* gcd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gcd.swift; sourceTree = "<group>"; };
 		A9D93531214417B9006CC456 /* GIFSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D93534214417B9006CC456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D93539214417B9006CC456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				A996F6FF2144F92D008C0E20 /* ViewControllers */,
+				A996F70F2145500B008C0E20 /* GiphyAPIClient.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -82,7 +115,7 @@
 		A996F7062144FAFA008C0E20 /* UICollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				A996F7072144FB41008C0E20 /* UICollectionViewLayout.swift */,
+				A996F7072144FB41008C0E20 /* GiphyLayout.swift */,
 			);
 			name = UICollectionViewLayout;
 			sourceTree = "<group>";
@@ -92,6 +125,7 @@
 			children = (
 				A9D9354C2144285A006CC456 /* README.md */,
 				A9D93533214417B9006CC456 /* GIFSearcher */,
+				A996F70D21454E6B008C0E20 /* GiphyKit */,
 				A9D93532214417B9006CC456 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +155,9 @@
 		A9D9354F214428C6006CC456 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A996F7272145B0D3008C0E20 /* NotificationName+Preferences.swift */,
+				A996F72921466B7A008C0E20 /* UIImage+GIF.swift */,
+				A996F72B21466BD0008C0E20 /* gcd.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,6 +177,16 @@
 				A996F6F72144F87A008C0E20 /* APIKey.swift */,
 				A996F6F92144F8BF008C0E20 /* Preferences.swift */,
 				A996F6FB2144F8CD008C0E20 /* PreferencesKey.swift */,
+				A996F71121456CF5008C0E20 /* Rating.swift */,
+				A996F71321456D3D008C0E20 /* LanguageCode.swift */,
+				A996F71521456D8B008C0E20 /* GIF.swift */,
+				A996F7172145ADA4008C0E20 /* ErrorCode.swift */,
+				A996F7192145AE36008C0E20 /* RenditionDesignation.swift */,
+				A996F71B2145AE5C008C0E20 /* Rendition.swift */,
+				A996F71D2145AE8E008C0E20 /* RenditionFileType.swift */,
+				A996F71F2145AEBD008C0E20 /* RenditionFile.swift */,
+				A996F7212145AEFC008C0E20 /* RenditionFileType+Keys.swift */,
+				A996F7232145AF2B008C0E20 /* Formatters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +206,7 @@
 			children = (
 				A996F709214511C9008C0E20 /* DashboardViewModel.swift */,
 				A996F70B214511FE008C0E20 /* DashboardViewModel+CollectionView.swift */,
+				A996F7252145B056008C0E20 /* DashboardViewModel+Preferences.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -226,6 +274,7 @@
 			files = (
 				A9D9353F214417BB006CC456 /* LaunchScreen.storyboard in Resources */,
 				A9D9353C214417BB006CC456 /* Assets.xcassets in Resources */,
+				A996F70E21454E6B008C0E20 /* GiphyKit in Resources */,
 				A9D9354D2144285A006CC456 /* README.md in Resources */,
 				A9D9353A214417B9006CC456 /* Main.storyboard in Resources */,
 			);
@@ -238,15 +287,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A996F71C2145AE5C008C0E20 /* Rendition.swift in Sources */,
+				A996F71221456CF5008C0E20 /* Rating.swift in Sources */,
+				A996F7282145B0D3008C0E20 /* NotificationName+Preferences.swift in Sources */,
 				A996F70C214511FE008C0E20 /* DashboardViewModel+CollectionView.swift in Sources */,
 				A996F7052144FAC0008C0E20 /* DashboardViewController+Search.swift in Sources */,
 				A996F7012144F959008C0E20 /* GIFCollectionViewCell.swift in Sources */,
-				A996F7082144FB41008C0E20 /* UICollectionViewLayout.swift in Sources */,
+				A996F7102145500B008C0E20 /* GiphyAPIClient.swift in Sources */,
+				A996F7242145AF2B008C0E20 /* Formatters.swift in Sources */,
+				A996F7202145AEBD008C0E20 /* RenditionFile.swift in Sources */,
+				A996F7182145ADA4008C0E20 /* ErrorCode.swift in Sources */,
+				A996F7222145AEFC008C0E20 /* RenditionFileType+Keys.swift in Sources */,
+				A996F71A2145AE36008C0E20 /* RenditionDesignation.swift in Sources */,
+				A996F7082144FB41008C0E20 /* GiphyLayout.swift in Sources */,
+				A996F71621456D8B008C0E20 /* GIF.swift in Sources */,
 				A996F70A214511C9008C0E20 /* DashboardViewModel.swift in Sources */,
+				A996F7262145B056008C0E20 /* DashboardViewModel+Preferences.swift in Sources */,
+				A996F71421456D3D008C0E20 /* LanguageCode.swift in Sources */,
 				A996F7032144FA7C008C0E20 /* DashboardViewController.swift in Sources */,
 				A996F6F82144F87A008C0E20 /* APIKey.swift in Sources */,
 				A996F6FA2144F8BF008C0E20 /* Preferences.swift in Sources */,
 				A9D93535214417B9006CC456 /* AppDelegate.swift in Sources */,
+				A996F71E2145AE8E008C0E20 /* RenditionFileType.swift in Sources */,
+				A996F72C21466BD0008C0E20 /* gcd.swift in Sources */,
+				A996F72A21466B7A008C0E20 /* UIImage+GIF.swift in Sources */,
 				A996F6FC2144F8CD008C0E20 /* PreferencesKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,15 +455,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UBDP9T662;
-				INFOPLIST_FILE = GIFSearcher/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GIFSearcher/App Boilerplate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KKi.GIFSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,15 +475,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UBDP9T662;
-				INFOPLIST_FILE = GIFSearcher/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GIFSearcher/App Boilerplate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KKi.GIFSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

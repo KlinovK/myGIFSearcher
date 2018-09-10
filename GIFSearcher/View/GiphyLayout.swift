@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UICollectionViewLayout: UICollectionViewFlowLayout {
+class GiphyLayout: UICollectionViewFlowLayout {
 
     override func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         guard let attributes = super.initialLayoutAttributesForAppearingItem(at: itemIndexPath) else
